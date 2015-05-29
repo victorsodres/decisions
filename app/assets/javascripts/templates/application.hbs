@@ -1,0 +1,60 @@
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Sair</a></li>
+</ul>
+
+<div class='navbar-fixed'>
+  <nav class="red darken-4" role="navigation">
+    <div class="container">
+      <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">{{Decisions.applicationName}}</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#"><i class="mdi-action-search"></i></a></li>
+          <li><i class="mdi-action-view-module"></i></li>
+          <li><i class="mdi-navigation-refresh"></i></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="mdi-navigation-more-vert left"></i></a></li>
+        </ul>
+
+        <!--mobile-->
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Menu</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <!--mobile-->
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="row">
+  <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+    <!-- Grey navigation panel
+
+          This content will be:
+      3-columns-wide on large screens,
+      4-columns-wide on medium screens,
+      12-columns-wide on small screens  -->
+      {{outlet "sidebar"}}
+  </div>
+
+  <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+    <!-- Teal page content
+
+          This content will be:
+      9-columns-wide on large screens,
+      8-columns-wide on medium screens,
+      12-columns-wide on small screens  -->
+      {{outlet "content"}}
+  </div>
+</div>
+
+<!--
+<footer class="page-footer red darken-4">
+  Projeto de Conclusão de Curso - Sistemas de Informação - Faculdades Integradas Rio Branco
+  <footer class="footer-copyright">
+    <div class="container">
+      Victor A. Sodré dos Santos - 2015 © Copyright
+    </div>
+  </div>
+</footer>-->

@@ -24,4 +24,6 @@
 // for more details see: http://emberjs.com/guides/application/
 Decisions = Ember.Application.create();
 
+Decisions.applicationName = "Decisions";
+
 //= require_tree .
